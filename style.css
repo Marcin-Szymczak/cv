@@ -1,0 +1,168 @@
+:root {
+    --accent: #FFBC46;
+    --fg:     #FFFFFF;
+    --bg:     #B9B9B9;
+}
+
+@page {
+    size: A4 portrait;
+}
+
+body {
+    width: 210mm;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "SF Pro Text";
+
+    background-color: white;
+
+    /*padding-top: 0.5cm;
+    padding-bottom: 0.5cm;
+    padding-left: 1cm;
+    padding-right: 1cm;*/
+
+    margin-top: 0cm;
+    padding-top: 0cm;
+    border-color: white;
+    border-style: solid;
+    border-top: 0cm;
+    border-bottom: 0cm;
+    border-left: 1cm;
+    border-right: 1cm;
+
+}
+
+
+#brief table, td, tr {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+table.info {
+    border-left: 0px;
+}
+
+td:first-child {
+    font-weight: 600;
+    padding-right: 1em;
+    white-space: nowrap;
+}
+
+table.info td:first-child {
+    width: auto;
+    border-bottom: 1px solid gray;
+    padding-right: 1em;
+}
+
+table.info tr:last-child td, table.info tr:only-child td {
+    border-bottom: 0px none;
+}
+
+
+table.info td {
+    vertical-align: top;
+    border-bottom: 1px solid lightgray;
+    padding: 0.1em 0.1em 0.2em 0.1em;
+}
+
+
+table.info ul {
+    margin-top: 0em;
+    padding-left: 1em;
+    margin-bottom: 0em;
+}
+
+table.info li {
+    display: list-item;
+    list-style: none;
+}
+
+table.info col {
+    width: 50%;
+}
+
+table.info li:before {
+    content: "•";
+    color: var(--accent);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;    
+}
+
+table.info span {
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+dl.info dt {
+    display: inline-block;
+}
+
+dl.info dd {
+    display: inline-block;
+}
+
+dl.info dd::after {
+    display: block;
+    content: '';
+}
+
+
+
+#mugshot {
+    height: 4.8cm;
+    margin-bottom: -1.6cm;
+}
+
+.expand {
+    width: 100%;
+}
+
+div.half {
+    display: inline-block;
+    width: 50%;
+    /*float: left;
+    clear: both;*/
+}
+
+div.half + div {
+    width: 49%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+h1, h2 {
+    margin-top: 0.3em;
+    margin-bottom: 0.15em;
+    padding-bottom: 0px;
+}
+
+h1 {
+    /* background-color: var(--accent); */
+    margin-top: 0cm;
+    border-bottom: 4px solid var(--accent);
+}
+
+h2 {
+    border-left: 12px solid var(--accent);
+    border-bottom: 1px none var(--accent);
+    padding-left: 8px;
+}
+
+p.info {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    margin-bottom: 0em;
+}
+
+footer {
+    font-size: 0.8em;
+    margin-top: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-style: italic;
+    color: #222222;
+}
